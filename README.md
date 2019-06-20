@@ -16,7 +16,9 @@ TWO - You run the script (included in the repository as magc.py). You can set th
    It could look something like this: 
       
         sleep 10
-        /home/pi/flipnode.py
+        /home/pi/magc.py
         exit 0
 
-   Once the script has run, a countdown will begin: e.g. 10 seconds (specified as delay within). Countdown is terminated if        magnet is returned to reed switch but script remains active. If countdown is ever achieved, script will activate servos at      two specified GPIOs. If this happens, the script will terminate. The script can also be manually terminated.
+   Once the script has run, a countdown will begin: e.g. 10 seconds (specified as delay within). Countdown is terminated if        magnet is returned to reed switch but script remains active. If countdown is ever completed, script will activate servos at    two specified GPIOs. If this happens, the script will terminate. The script can also be manually terminated. 
+   
+   In TWO, the reed switch should simply be connected to a GPIO and ground.
